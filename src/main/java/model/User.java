@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public class User {
 
-    private String dni;
     private String name;
     private String surname;
     private String username;
@@ -16,7 +15,6 @@ public class User {
     private List<Game> games;
 
     public User(){
-        this.dni = "";
         this.name = "";
         this.surname = "";
         this.username = "";
@@ -27,7 +25,6 @@ public class User {
     }
 
     public User(String dni, String name, String surname, String username, int age, String address, String country, double money, List<Game> games) {
-        this.dni = dni;
         this.name = name;
         this.surname = surname;
         this.username = username;
@@ -36,14 +33,6 @@ public class User {
         this.country = country;
         this.money = money;
         this.games = games;
-    }
-
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
     }
 
     public String getName() {
@@ -125,16 +114,13 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "dni='" + dni + '\'' +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", username='" + username + '\'' +
-                ", age=" + age +
-                ", address='" + address + '\'' +
-                ", country='" + country + '\'' +
-                ", money=" + money +
-                ", games=" + games +
-                '}';
+        return  "\n\tName: " + name +
+                "\n\tSurname: " + surname +
+                "\n\tUsername: " + username +
+                "\n\tAge: " + age +
+                "\n\tAddress: " + address +
+                "\n\tCountry: " + country +
+                "\n\tMoney: " + money +
+                "\nGames:\n\t" + games.toString() + "\n\t";
     }
 }
