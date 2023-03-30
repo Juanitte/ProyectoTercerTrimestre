@@ -72,11 +72,6 @@ public class Developer extends Account {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(username);
-    }
-
-    @Override
     public String toString() {
         return  "\n\tName: " + username +
                 "\n\tDescription: " + description +
