@@ -1,0 +1,9 @@
+package model;
+
+public enum Genres {
+
+    ACTION, ADVENTURE, PLATFORMS, RPG, VISUAL_NOVEL,
+    FPS, RTS, MOBA, BATTLE_ROYALE, SURVIVAL,
+    SPORTS, RACING, SIMULATOR, CASUAL, INDIE;
+
+}
