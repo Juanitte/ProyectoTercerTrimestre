@@ -24,7 +24,7 @@ public class User {
         this.money = 0;
     }
 
-    public User(String dni, String name, String surname, String username, int age, String address, String country, double money, List<Game> games) {
+    public User(String name, String surname, String username, int age, String address, String country, double money, List<Game> games) {
         this.name = name;
         this.surname = surname;
         this.username = username;
